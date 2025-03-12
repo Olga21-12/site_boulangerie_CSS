@@ -1,0 +1,16 @@
+.banner button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-left: 5%;
+    transition: background 0.3s ease-in-out;
+}
+
+.banner button:hover {
+    background-color: #da612a;
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+    --primary-color: #eaa637;
+    --secondary-color: #f6f0ea;
+    --accent-color: #66b3cf;
+    --text-color: #898989;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: "Alegreya", serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px 50px;
+    color: var(--secondary-color);
+}
+
+header h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+
+
+

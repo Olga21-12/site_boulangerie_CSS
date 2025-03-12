@@ -1,0 +1,58 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 615px;
+    background-image: url('../img/carousel-2.jpg');
+    background-size: 100% 615px;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 3%;
+    justify-content: flex-start;
+    padding-left: 5%;
+    color: white;
+}
+
+/* Затемняющий слой */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Прозрачный чёрный фон */
+    top: 0;
+    left: 0;
+}
+
+/* Контент теперь выше затемнения */
+.banner-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Маленький заголовок */
+.banner h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+/* Главный заголовок */
+.banner h1 {
+    font-size: 4.5rem;
+    color: white;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    margin-left: 5%;
+}
+
+/* Текст под заголовком */
+.banner p {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 100%;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,85 @@
+.fa-phone{
+    color: var(--primary-color);
+}
+
+nav{
+    position: relative;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Выпадающее меню */
+nav ul li:nth-child(5) ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--secondary-color);
+    list-style: none;
+    width: 150px;
+    z-index: 20;
+}
+
+nav ul li:nth-child(5):hover ul {
+    display: block;
+}
+
+nav ul li:nth-child(5) ul li {
+    padding: 10px;
+}
+
+nav ul li:nth-child(5) ul li a {
+    color: black;
+    display: block;
+}
+
+nav ul li:nth-child(5) ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Контактный блок */
+.nav__contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--secondary-color);
+}
+
+.nav__contact i {
+    font-size: 1.5rem;
+}
+
+.nav__contact div {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__contact span:first-child {
+    font-weight: bold;
+}
+
+.nav__contact span:last-child {
+    font-size: 0.9rem;
+}
