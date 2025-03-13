@@ -1,0 +1,48 @@
+.experience{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  justify-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.experience__cards{
+    background-color: var(--accent-color);
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.experience__cards:hover{
+    transform: scale(1.05);
+    background-color: white;
+    box-shadow: 0 0 14px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fa-users,
+.fa-cart-plus,
+.fa-certificate,
+.fa-bread-slice{
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+
+.experience__text{
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    margin: 20px 0;
+}
+
+.experience__nombre{
+    font-size: 3rem;
+    font-weight: 700;
+}
