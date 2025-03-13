@@ -3,7 +3,7 @@
 :root{
     --primary-color: #eaa637;
     --secondary-color: #f6f0ea;
-    --accent-color: #66b3cf;
+    --accent-color: #fef5ec;
     --text-color: #898989;
 }
 
@@ -17,19 +17,7 @@ html, body{
     font-family: "Alegreya", serif;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    padding: 15px 50px;
-    color: var(--secondary-color);
-}
 
-header h2 {
-    color: var(--primary-color);
-    font-size: 1.8rem;
-}
 
 
 

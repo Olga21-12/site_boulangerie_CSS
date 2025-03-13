@@ -1,3 +1,17 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px 50px;
+    color: var(--secondary-color);
+}
+
+header h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
 .fa-phone{
     color: var(--primary-color);
 }
