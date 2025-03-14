@@ -14,20 +14,42 @@
     width: 50%; /* Занимает половину родительского контейнера */
     position: relative; /* Позволяет позиционировать дочерние элементы */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     background-color: var(--accent-color); /* Светлый оранжевый цвет */
     padding: 20px;
+    overflow: visible; /* Позволяет изображениям выходить за пределы контейнера */
+}
+
+.about__img {
+    position: absolute; /* Позволяет точно позиционировать */
+    width: 55%; /* Увеличиваем размер, чтобы выйти за границы */
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Первое изображение (левый верхний угол) */
+.about__img--first {
+    top: -80px; /* Смещаем вверх */
+    left: -40px; /* Смещаем влево */
+}
+
+/* Второе изображение (нижний правый угол) */
+.about__img--second {
+    bottom: -80px; /* Смещаем вниз */
+    right: -40px; /* Смещаем вправо */
 }
 
 /* Второй, темный фон внутри блока about__pain */
 .about__pain::before {
     content: "";
     position: absolute;
-    width: 80%; /* Размер меньше, чем родительский блок */
-    height: 80%;
+    width: 70%; /* Размер меньше, чем родительский блок */
+    height: 70%;
     background-color: var(--primary-color); /* Темный оранжевый */
     z-index: 0; /* Размещаем фон позади изображений */
+    top: 10%;
+    left: 10%;
 }
 
 /* Стили изображений в блоке about__pain */
@@ -36,16 +58,6 @@
     z-index: 1;
     width: 45%; /* Делаем изображения одинакового размера */
     object-fit: cover; /* Обрезка без искажения */
-}
-
-/* Корректируем положение первого изображения */
-.about__pain img:first-child {
-    transform: translateY(-10px); /* Немного выше второго изображения */
-}
-
-/* Корректируем положение второго изображения */
-.about__pain img:last-child {
-    transform: translateY(10px); /* Немного ниже первого */
 }
 
 /* Правая часть секции about (текстовый блок) */
@@ -74,28 +86,25 @@
     line-height: 1.6; /* Улучшает читаемость */
 }
 
-/* Блок списка */
 .about__text__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Две колонки */
-    gap: 15px; /* Отступы между пунктами */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
     margin-top: 20px;
 }
 
-/* Пункты списка */
-.about__text__list li {
-    list-style: none; /* Убираем стандартные маркеры */
+.list-column p {
     position: relative;
-    padding-left: 30px; /* Отступ для иконки */
+    padding-left: 25px;
     font-size: 1.1rem;
 }
 
 /* Добавляем иконку галочки перед пунктами списка */
-.about__text__list li::before {
-    content: "\2714"; /* Юникод галочки */
+.list-column p::before {
+    content: "\2714";
     position: absolute;
     left: 0;
-    color: var(--primary-color); /* Оранжевый цвет */
+    color: var(--primary-color);
     font-size: 1.2rem;
 }
 
