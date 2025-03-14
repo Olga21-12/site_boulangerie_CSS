@@ -23,7 +23,7 @@
 }
 
 .experience__cards:hover{
-    zoom: 1.2;
+    transform: scale(1.05);
     background-color: white;
     box-shadow: 0 0 14px 5px rgba(0, 0, 0, 0.1);
 }
